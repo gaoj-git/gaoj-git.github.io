@@ -3,7 +3,7 @@ layout: page
 title: 首页
 ---
 <div class="page page-index">
-  {% for post in site.posts  -%}
+  {% for (post,index) in site.posts  -%}
     {%- capture post_year %}{{ post.date | date: "%Y" }}{% endcapture -%}
     {%- capture post_previous_year %}{{ post.previous.date | date: "%Y" }}{% endcapture -%}
     {%- capture post_next_year %}{{ post.next.date | date: "%Y" }}{% endcapture -%}
@@ -13,7 +13,7 @@ title: 首页
       <ul>
     {%- endif %}
         <li>
-          <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span>
+          <span class="date" id="{{index}}">{{ post.date | date: "%Y/%m/%d" }}</span>
           <div class="title">
             <a href="{{ site.baseurl | append: post.url }}" class="hover-underline">{{ post.title }}</a>
           </div>
