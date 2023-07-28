@@ -35,7 +35,7 @@ title: 关于我
         var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
         var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
         var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-        document.getElementById("show_time").innerHTML=diffDays+"天"+diffHours+"小时"+diffMinutes+"分钟"+diffSeconds+"秒***"; //+diffYears+"年"
+        document.getElementById("show_time").innerHTML=diffYears+"年"+diffDays+"天"+diffHours+"小时"+diffMinutes+"分钟"+diffSeconds+"秒"; //+diffYears+"年"
     }
     siteTime();
 </script>
