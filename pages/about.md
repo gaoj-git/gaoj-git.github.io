@@ -4,41 +4,40 @@ title: 关于我
 ---
 
 <script  type="text/javascript" language="javascript">
-    function secondToDate(second) {
-        if (!second) {
-        return 0;
-        }
-        var time = new Array(0, 0, 0, 0, 0);
-        if (second >= 365 * 24 * 3600) {//计算年
-        time[0] = parseInt(second / (365 * 24 * 3600));
-        second %= 365 * 24 * 3600;
-        }
-        if (second >= 24 * 3600) {//计算天
-        time[1] = parseInt(second / (24 * 3600));
-        second %= 24 * 3600;
-        }
-        if (second >= 3600) {//计算时
-        time[2] = parseInt(second / 3600);
-        second %= 3600;
-        }
-        if (second >= 60) {//计算分
-        time[3] = parseInt(second / 60);
-        second %= 60;
-        }
-        if (second > 0) {//计算秒
-        time[4] = second;
-        }
-        return time;
+    
+    function siteTime(){
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth()+1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2021,12,05,00,00,00); //北京时间创建网站的时间
+        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+        var diff = t2-t1;
+        var diffYears = Math.floor(diff/years);
+        var diffDays = Math.floor((diff/days)-diffYears*365);
+        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+        document.getElementById("show_time").innerHTML=diffDays+"天"+diffHours+"小时"+diffMinutes+"分钟"+diffSeconds+"秒***"; //+diffYears+"年"
     }
-    function setTime() {
-        var create_time = Math.round(new Date(Date.UTC(2022, 5, 1, 0, 0, 0)).getTime() / 1000);//设置起始时间为2017年1月1日0点整，注意月份取值是0-11。
-        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
-        currentTime = secondToDate((timestamp - create_time));
-        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天' + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4] + '秒';
-        document.getElementById("show_time").innerHTML = currentTimeHtml;
-    }
-    setTime();
-    setInterval(setTime, 1000);
+    siteTime();
 </script>
 
 > Hello 陌生人，欢迎访问 Gaoj Blog
