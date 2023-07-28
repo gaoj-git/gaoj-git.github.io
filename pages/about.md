@@ -17,7 +17,7 @@ title: 关于我
 
 - GitHub: [https://github.com/gaoj-git](https://github.com/gaoj-git)
   
-- 网站已运行： <div>
+> 网站已运行： <div>
 	<span id="show_time"></span>
 </div>
 
