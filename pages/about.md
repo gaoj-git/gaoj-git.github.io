@@ -3,32 +3,32 @@ layout: mypost
 title: 关于我
 ---
 
-<script>
+<script  type="text/javascript" language="javascript">
     function secondToDate(second) {
-    if (!second) {
-      return 0;
-    }
-    var time = new Array(0, 0, 0, 0, 0);
-    if (second >= 365 * 24 * 3600) {//计算年
-      time[0] = parseInt(second / (365 * 24 * 3600));
-      second %= 365 * 24 * 3600;
-    }
-    if (second >= 24 * 3600) {//计算天
-      time[1] = parseInt(second / (24 * 3600));
-      second %= 24 * 3600;
-    }
-    if (second >= 3600) {//计算时
-      time[2] = parseInt(second / 3600);
-      second %= 3600;
-    }
-    if (second >= 60) {//计算分
-      time[3] = parseInt(second / 60);
-      second %= 60;
-    }
-    if (second > 0) {//计算秒
-      time[4] = second;
-    }
-    return time;
+        if (!second) {
+        return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {//计算年
+        time[0] = parseInt(second / (365 * 24 * 3600));
+        second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {//计算天
+        time[1] = parseInt(second / (24 * 3600));
+        second %= 24 * 3600;
+        }
+        if (second >= 3600) {//计算时
+        time[2] = parseInt(second / 3600);
+        second %= 3600;
+        }
+        if (second >= 60) {//计算分
+        time[3] = parseInt(second / 60);
+        second %= 60;
+        }
+        if (second > 0) {//计算秒
+        time[4] = second;
+        }
+        return time;
     }
     function setTime() {
         var create_time = Math.round(new Date(Date.UTC(2022, 5, 1, 0, 0, 0)).getTime() / 1000);//设置起始时间为2017年1月1日0点整，注意月份取值是0-11。
