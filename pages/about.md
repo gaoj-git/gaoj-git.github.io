@@ -20,4 +20,4 @@ title: 关于我
 
 - Email&nbsp;: [971004367@qq.com](mailto:971004367@qq.com)
 
-- GitHub: [https://github.com/gaoj-git][(https://github.com/tmaize](https://github.com/gaoj-git))
+- GitHub: [https://github.com/gaoj-git](https://github.com/gaoj-git)(https://github.com/gaoj-git)
