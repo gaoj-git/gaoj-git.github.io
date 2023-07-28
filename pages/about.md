@@ -16,8 +16,11 @@ title: 关于我
 - Email&nbsp;: [971004367@qq.com](mailto:971004367@qq.com)
 
 - GitHub: [https://github.com/gaoj-git](https://github.com/gaoj-git)
+<span id="show_time"></span>
+<div>
+	<span id="show_time"></span>
+</div>
 
-- 网站已运行：<span id="show_time"></span><span id="show_time"></span>
 <script>
 		function secondToDate(second) {
 				if (!second) {
