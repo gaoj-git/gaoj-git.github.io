@@ -3,20 +3,21 @@ layout: mypost
 title: 关于我
 ---
 
-> Hello 陌生人，欢迎访问 TMaize Blog
+> Hello 陌生人，欢迎访问 Gaoj Blog
 
-该博客托管于 GitHub Page，国内解析到腾讯云对象存储，以保证国内外的访问速度，留言页面使用腾讯的“吐个槽”
-
-主题是自己写的，见[tmaize-blog](https://github.com/TMaize/tmaize-blog)，喜欢的话可以给个小星星。另外欢迎添加友链，在[留言板](chat.html)留言即可
+该博客托管于 GitHub Page
 
 ## 相关技能
-
-全栈开发，第一份工作主要使用 Java（现在快忘了），使用过一段时间 Golang，目前在做前端 JavaScript、Node.js，主要是 Vue 技术栈。熟悉数据库，Docker，运维相关技术
-
-如有远程工作的机会欢迎联系我 😄
+全栈开发，17年初开始从事java开发工作，使用 Golang重构过ruoyi的脚手架项目，也使用过jquery,js,html,vue,uniapp.
+1.掌握 java 常用的设计模式，多线程以及高并发的处理。
+2.掌握常用的框架：spring、springmvc、springboot、mybaties、hibernate 、消息队列、mybatiesplus。
+3.掌握微信，支付宝授权登录、支付、提现、退款等接口开发流程。
+4.掌握 mysql  数据库的使用以及调优，redis  缓存数据库以及分布式锁的使用，有 tengine  时序数据库使用经验。
+5.熟悉 vue、uniapp  等前端技术的使用。
+6.熟悉 linux 服务器部署发布流程
 
 ## 联系我
 
-- Email&nbsp;: [1772314831@qq.com](mailto:1772314831@qq.com)
+- Email&nbsp;: [971004367@qq.com](mailto:971004367@qq.com)
 
-- GitHub: [https://github.com/tmaize](https://github.com/tmaize)
+- GitHub: [https://github.com/gaoj-git][(https://github.com/tmaize](https://github.com/gaoj-git))
