@@ -48,7 +48,7 @@ title: 关于我
 				return time;
 			}
 			function setTime() {
-				var create_time = Math.round(new Date(Date.UTC(2022, 11, 1, 0, 0, 0)).getTime() / 1000);//设置起始时间为2017年1月1日0点整，注意月份取值是0-11。
+				var create_time = Math.round(new Date(Date.UTC(2022, 5, 1, 0, 0, 0)).getTime() / 1000);//设置起始时间为2017年1月1日0点整，注意月份取值是0-11。
 				var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
 				currentTime = secondToDate((timestamp - create_time));
 				currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天' + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4] + '秒';
