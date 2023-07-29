@@ -22,6 +22,11 @@
     {% include ext-adsense.html -%}
   </div>
   {% endif %}
+  <div id="toc" style="position: fixed;
+  top: 20%;
+  right: 10%;">
+    {% include toc.html html=content %}
+  </div>
 </div>
 {% include footer.html -%}
 {% include script.html -%}

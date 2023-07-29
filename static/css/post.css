@@ -162,3 +162,7 @@
     margin: 15px 0;
   }
 }
+html.dark #toc a {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
