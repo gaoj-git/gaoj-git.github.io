@@ -3,7 +3,7 @@ layout: page
 title: 首页
 ---
 <div class="page page-index">
-  {% for post in site.posts  -%}
+  {% for post in paginator.posts  -%}
     {%- capture post_year %}{{ post.date | date: "%Y" }}{% endcapture -%}
     {%- capture post_previous_year %}{{ post.previous.date | date: "%Y" }}{% endcapture -%}
     {%- capture post_next_year %}{{ post.next.date | date: "%Y" }}{% endcapture -%}
@@ -29,3 +29,4 @@ title: 首页
     {%- endif %}
   {%- endfor %}
 </div>
+{% include posts_paginator.html %}

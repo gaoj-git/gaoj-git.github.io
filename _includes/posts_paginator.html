@@ -1,0 +1,16 @@
+<!-- 分页链接 -->
+<div class="pagination" style="text-align: right;">
+  <div>
+  {% if paginator.previous_page %}
+  <div style="display:inline-block"><a href="{{ paginator.previous_page_path }}" class="previous" ><<上页</a></div>
+  {% else %}
+    <!-- <span class="previous">Previous</span> -->
+  {% endif %}
+  <div style="display:inline-block"><span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span></div>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next" >下页>></a>
+  {% else %}
+    <!-- <span class="next ">Next</span> -->
+  {% endif %}
+  </div>
+</div>
