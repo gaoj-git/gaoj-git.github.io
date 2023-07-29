@@ -19,6 +19,8 @@
 一般提交到 github 过个几十秒就可以看到效果，如果你需要对在本地查看效果需要安装 ruby 环境和依赖
 
 windows 下推荐在 wsl 下装 ruby，直接一句`apt install build-essential ruby ruby-dev` 就行了
+安装的是ruby 2.7.8版本的，项目可以在本地正常运行，试过装过ruby3+版本后本地无法启动
+项目根目录下提供win10 64位的压缩包，全部下载到本地然后解压第一个压缩包就会看到安装包 rubyinstaller-devkit-2.7.8-1-x64.exe
 
 ```bash
 # linux下需要gcc
