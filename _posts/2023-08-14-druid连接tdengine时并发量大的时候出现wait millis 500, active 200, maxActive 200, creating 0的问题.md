@@ -12,7 +12,7 @@ extMath: true
 ## 解决
 在关闭连接的地方调用dataSource.removeAbandoned(),关键代码如下。
 
-~~~java
+```java
 private void returnConnection(ResultSet resultSet,Statement statement,Connection connection){
 	if(resultSet!=null){
 		try {
