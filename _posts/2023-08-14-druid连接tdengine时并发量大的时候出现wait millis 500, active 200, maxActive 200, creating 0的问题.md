@@ -41,7 +41,8 @@ private void returnConnection(ResultSet resultSet,Statement statement,Connection
 ```
 
 2.  配置druid定期清理一直在占用未释放的连接，关键代码如下
-~~~ java
+   
+~~~ java?linenums
 @Bean
 public DruidDataSource initConnection(){
 		DruidDataSource dataSource = new DruidDataSource();
