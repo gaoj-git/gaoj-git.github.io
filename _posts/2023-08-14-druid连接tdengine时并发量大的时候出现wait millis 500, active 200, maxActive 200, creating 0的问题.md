@@ -10,7 +10,7 @@ extMath: true
 
 ----------
 ## 解决
-1.   在关闭连接的地方调用dataSource.removeAbandoned(),关键代码如下,本地压测后再也没有出现这个异常问题了，不过加了这个还是存在连接泄漏的问题，但是我本地压测的时候，却没有再报<font color="red">wait millis 500, active 200, maxActive 200, creating 0</font>的错误。
+    1.在关闭连接的地方调用dataSource.removeAbandoned(),关键代码如下,本地压测后再也没有出现这个异常问题了，不过加了这个还是存在连接泄漏的问题，但是我本地压测的时候，却没有再报<font color="red">wait millis 500, active 200, maxActive 200, creating 0</font>的错误。
 
 ```java?linenums
 private void returnConnection(ResultSet resultSet,Statement statement,Connection connection){
@@ -40,7 +40,7 @@ private void returnConnection(ResultSet resultSet,Statement statement,Connection
 }
 ```
 
-3.  配置druid定期清理一直在占用未释放的连接，关键代码如下
+    2.配置druid定期清理一直在占用未释放的连接，关键代码如下
    
 ~~~ java?linenums
 @Bean
