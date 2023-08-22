@@ -40,10 +40,10 @@ private void returnConnection(ResultSet resultSet,Statement statement,Connection
 }
 ```
 
-   2. 配置druid定期清理一直在占用未释放的连接，关键代码如下
-   ~~~ java
-   @Bean
-	public DruidDataSource initConnection(){
+2. 配置druid定期清理一直在占用未释放的连接，关键代码如下
+~~~ java
+@Bean
+public DruidDataSource initConnection(){
 		DruidDataSource dataSource = new DruidDataSource();
 		dataSource.setDriverClassName(driverName);
 		dataSource.setUrl(url);
@@ -59,5 +59,5 @@ private void returnConnection(ResultSet resultSet,Statement statement,Connection
 		dataSource.setRemoveAbandoned(removeAbandoned);//是否启用连接超时回收
 		dataSource.setRemoveAbandonedTimeoutMillis(removeAbandonedTimeoutMillis);//超时时间 单位毫秒
 		return dataSource;
-	}
-   ~~~
+}
+~~~
