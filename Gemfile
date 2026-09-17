@@ -7,4 +7,4 @@ gem 'jekyll-paginate'
 gem 'csv'
 gem 'base64'
 gem 'bigdecimal'
-
+gem 'rexml'
