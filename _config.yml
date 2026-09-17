@@ -13,7 +13,7 @@ kramdown:
   auto_ids: true
   input: GFM
   syntax_highlighter: rouge
-exclude: ['CNAME', 'README.md', 'LICENSE', '_site', 'dist', 'Gemfile', 'Gemfile.lock', 'blog.sh']
+exclude: ['CNAME', 'README.md', 'LICENSE', '_site', 'dist', 'Gemfile', 'Gemfile.lock', 'blog.sh','rubyinstaller-devkit-2.7.8-1-x64.zip.001','rubyinstaller-devkit-2.7.8-1-x64.zip.002','rubyinstaller-devkit-2.7.8-1-x64.zip.003']
 
 # 域名配置
 # baseurl配置,如果网站部署在根目录下的其他目录中，请设置为 /目录名
